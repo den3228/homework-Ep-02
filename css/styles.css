@@ -1,0 +1,139 @@
+
+:root {
+    --main-color: #2E2F42;
+    --accent-color: #404BBF;
+    --text-color:#434455;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* <!-----------------COMPONENTS------------------> */
+
+.portfolio-btn{
+font-family: var(--primary-font);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.64px;
+color: #4D5AE5;    
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+color: #FFFFFF;
+background-color: var(--accent-color);
+}
+
+.section-title{
+font-family: var(--primary-font);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+color: var(--main-color)
+}
+
+.description-title{
+font-family: var(--primary-font);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.4px;
+color: var(--main-color)
+}   
+
+.text {
+font-family: var(--primary-font);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.32px;
+color: var(--text-color)
+}
+
+/* <!-----------------HEADER------------------> */
+
+.menu-link {
+font-family: var(--primary-font);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.32px;
+color:var(--main-color)
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.contact-info {
+font-family: var(--primary-font);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.32px;
+color: var(--text-color)
+}
+
+.contact-info:hover,
+.contact-info:focus {
+    color: var(--accent-color);
+}
+
+.logo-first{
+font-family: var(--secondary-font);
+font-size: 18px;
+font-weight: 800;
+line-height: 1.17; /* 116.667% */
+letter-spacing: 0.54px;
+text-transform: uppercase;
+color: #4D5AE5;
+}
+
+.logo-second{
+font-family: var(--secondary-font);
+font-size: 18px;
+font-weight: 800;
+line-height: 1.17; /* 116.667% */
+letter-spacing: 0.54px;
+text-transform: uppercase;
+color: var(--main-color)
+}
+
+/* <!-----------------HERO------------------> */
+
+.main-title {
+font-family: var(--primary-font);
+font-size: 56px;
+font-weight: 700;
+line-height: 1.07; /* 107.143% */
+letter-spacing: 1.12px;
+/* color: #FFFFFF; */
+}
+
+.main-btn{
+font-family: var(--primary-font);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.64px;
+background-color: #4D5AE5;
+color: #FFFFFF;
+}
+    
+.main-btn:hover,
+.main-btn:focus {
+color: #FFFFFF;
+background-color: var(--accent-color);
+}
+    
