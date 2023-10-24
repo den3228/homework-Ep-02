@@ -15,10 +15,45 @@
     text-decoration: none;
 }
 
+body{
+    font-family: var(--primary-font);
+}
+
+h1,h2,h3,h4,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1470px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 /* <!-----------------COMPONENTS------------------> */
 
 .portfolio-btn{
-font-family: var(--primary-font);
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5; /* 150% */
@@ -33,9 +68,10 @@ background-color: var(--accent-color);
 }
 
 .section-title{
-font-family: var(--primary-font);
+margin-bottom: 72px;
 font-size: 36px;
 font-weight: 700;
+text-align: center;
 line-height: 1.11; /* 111.111% */
 letter-spacing: 0.72px;
 text-transform: capitalize;
@@ -43,7 +79,7 @@ color: var(--main-color)
 }
 
 .description-title{
-font-family: var(--primary-font);
+margin-bottom: 8px;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2; /* 120% */
@@ -52,18 +88,45 @@ color: var(--main-color)
 }   
 
 .text {
-font-family: var(--primary-font);
 font-size: 16px;
-font-weight: 400;
 line-height: 1.5; /* 150% */
 letter-spacing: 0.32px;
 color: var(--text-color)
 }
 
+.logo {
+    display: flex;
+    margin-right: 76px;
+}
+
 /* <!-----------------HEADER------------------> */
 
+.page-header {
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .menu-link {
-font-family: var(--primary-font);
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5; /* 150% */
@@ -76,8 +139,7 @@ color:var(--main-color)
     color: var(--accent-color);
 }
 
-.contact-info {
-font-family: var(--primary-font);
+.contact-info-phone {
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5; /* 150% */
@@ -85,8 +147,23 @@ letter-spacing: 0.32px;
 color: var(--text-color)
 }
 
-.contact-info:hover,
-.contact-info:focus {
+.contact-info-mail {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.32px;
+margin-left: auto;
+margin-right: 40px;
+color: var(--text-color)
+}
+
+.contact-info-mail:hover,
+.contact-info-mail:focus {
+    color: var(--accent-color);
+}
+
+.contact-info-phone:hover,
+.contact-info-phone:focus {
     color: var(--accent-color);
 }
 
@@ -113,16 +190,20 @@ color: var(--main-color)
 /* <!-----------------HERO------------------> */
 
 .main-title {
-font-family: var(--primary-font);
 font-size: 56px;
 font-weight: 700;
 line-height: 1.07; /* 107.143% */
+text-align: center;
 letter-spacing: 1.12px;
 /* color: #FFFFFF; */
 }
 
 .main-btn{
-font-family: var(--primary-font);
+padding-top: 16px;
+padding-bottom: 16px;
+padding-left: 32px;
+padding-right: 32px;
+border-radius: 4px;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5; /* 150% */
@@ -136,4 +217,58 @@ color: #FFFFFF;
 color: #FFFFFF;
 background-color: var(--accent-color);
 }
-    
+
+/* <!-----------------About-us----------------> */
+
+.about-us {
+display: flex;
+gap: 24px;
+align-content: flex-start;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* <!-----------------What-we-do----------------> */
+
+.what-we-do {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;    
+}
+
+/* <!-----------------Employes----------------> */
+
+.employees {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+}
+
+.employees-name {
+margin-bottom: 8px;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+text-align: center;
+letter-spacing: 0.4px;
+color: var(--main-color)
+}   
+
+.employees-position {
+font-size: 16px;
+line-height: 1.5; /* 150% */
+text-align: center;
+letter-spacing: 0.32px;
+color: var(--text-color)
+}
+
+.employees-card {
+   border-radius: 0px 0px 4px 4px;
+   /* flex-basis: calc((100% - 72px)/ 4); */
+   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08)
+}
+
+.employees-card-content-wrapper {
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
